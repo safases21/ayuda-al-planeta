@@ -1,17 +1,24 @@
 <?php
-    $destinatario = 'konichiva3125@gmail.com';
-    //este es el destinatario al que le llegara el correo
-    $nombre = $_POST['nombre'];
-    $asunto = $_POST['asunto'];
-    $email = $_POST['email'];
-    $numero = $_POST['numero'];
-    $mensaje = $_POST['mensaje'];
+$nombre = $_POST['nombre'];
+$mail = $_POST['email'];
+$empresa = $_POST['mensaje'];
+$asunto = $_POST['asunto'];
+$numero = $_POST['numero'];
 
-    $header = "Enviado desde ayuda al planeta";
-    $mensajeCompleto = $mensaje . "\nAtentamente: " . $nombre;
+$header = 'From: ' . $mail . " \r\n";
+$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
+$header .= "Mime-Version: 1.0 \r\n";
+$header .= "Content-Type: text/plain";
 
-    mail($destinatario, $asunto, $mensajeCompleto, $header);
-    echo "<script>alert('correo Enviado')</script>";
-    echo "<script> setTimeout(\"location.href='./contacto.html'\",1000)</script>";
+$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
+$mensaje .= "Su e-mail es: " . $mail . " \r\n";
+$mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
+$mensaje .= "Enviado el " . date('d/m/Y', time());
 
+$para = 'konichiva3125@gmail.com';
+$asunto = 'Mensaje de ayuda al planeta';
+
+mail($para, $asunto, utf8_decode($mensaje), $header);
+
+header("Location:contacto.html");
 ?>
