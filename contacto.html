@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contacto</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="shortcut icon" href="favicon.png">
+
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <header>
+      <div class="hero4">
+        <div class="contenido-header">
+          <nav>
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+              <i></i>
+              <i></i>
+              <i></i>
+            </label>
+            <div class="logo">
+              <a href="index.html"><img src="img/logo.png" class="logotipo"></a>
+            </div>
+            <div class="nav-wrapper">
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Nosotros.html" >Nosotros</a></li>
+                <li><a href="Como-Ayudar.html" >Como Ayudar</a></li>
+                <li><a href="contacto.html" class="activos">Contacto</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+    </header>
+
+    <!--Informacion-->
+    <div class="contenedor">
+      <main class="contenido-principal clearfix" >
+        <h2 class="encabezado">¿Alguna Pregunta? <span>Contactanos!</span><img src="img/planta.svg" class="planta"></h2>
+
+            <div class="contenedor-grid">
+                <p class="center"> Los Campos marcados con <span>*</span>son obligatorios </p>
+
+                <form class="reserva-contacto" method="post" data-netlify="true">
+                    <h2 class="verde center">Formulario</h2>
+
+                    <div class="campo">
+                        <input type="text" name="Nombre Completo" placeholder="Nombre Completo*" required>
+                    </div>
+
+                    <div class="campo">
+                        <input type="email" name="Correo Electronico" placeholder="Correo Electronico*" required>
+                    </div>
+
+                    <div class="campo">
+                        <input type="tel" name="Numero de telefono" placeholder="Numero de telefono*" required>
+                    </div>
+                    <div class="campo">
+                        <textarea name="Mensaje" placeholder="Mensaje*">
+                        </textarea>
+                    </div>
+                    <input type="submit" name="Enviar" class="button">
+                </form>
+             </div>
+        </main>
+    </div>
+
+<!--Mapa-->
+
+<div class="mapa"></div>   
+
+    <!--Footer-->
+
+    <footer class="site-footer">
+      <div class="contenedor clearfix" >
+        <div class="footer-informacion">
+          <h3>Juntos <span>Salvemos el Planeta</span></h3>
+          <p>Todos podemos tomar pequeñas pero importantes medidas para disminuir nuestra huella ecológica en el planeta, además de ayudar a combatir el cambio climático. Aquí algunas ideas de lo que puedes hacer en casa o en el trabajo. Por favor, únete a esta lucha y ¡pon de tu parte!</p>
+        </div>
+        <div class="ultimos-tweets">
+          <h3>Ultimos <span>tweets</span></h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li> <li> Odio minus nihil id cum doloribus odit illo autem numquam officiis.</li><li> doloribus inventore dicta impedit voluptatibus voluptas hic voluptatum porro numquam.</li>
+          </ul>
+        </div>
+
+        <!--Redes sociales-->
+
+        <div class="menu">
+          <h3>Redes <span>Sociales</span></h3>
+          <nav class="redes-sociales">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </nav>
+        </div>
+      </div>
+      <p class="copyright">Copyright &copy; 2021 Todos los Derechos Reservados Cesar Andres Pereira</p>
+    </footer>
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/lightbox-plus-jquery.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
