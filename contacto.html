@@ -65,24 +65,30 @@
             <div class="contenedor-grid">
                 <p class="center"> Los Campos marcados con <span>*</span>son obligatorios </p>
 
-                <form class="reserva-contacto" method="post" data-netlify="true">
+                <form action="php/correo.php" enctype="text/plain" class="reserva-contacto" method="post">
                     <h2 class="verde center">Formulario</h2>
 
                     <div class="campo">
-                        <input type="text" name="Nombre Completo" placeholder="Nombre Completo*" required>
+                        <input type="text" name="nombre" placeholder="Nombre Completo*" required>
                     </div>
 
                     <div class="campo">
-                        <input type="email" name="Correo Electronico" placeholder="Correo Electronico*" required>
+                        <input type="email" name="email" placeholder="Correo Electronico*" required>
                     </div>
 
                     <div class="campo">
-                        <input type="tel" name="Numero de telefono" placeholder="Numero de telefono*" required>
+                        <input type="tel" name="numero" placeholder="Numero de telefono*" required>
                     </div>
+
+                    <div class="campo">
+                      <input type="text" name="asunto" placeholder="Asunto*" required>
+                  </div>
+
                     <div class="campo">
                         <textarea name="Mensaje" placeholder="Mensaje*">
                         </textarea>
                     </div>
+
                     <input type="submit" name="Enviar" class="button">
                 </form>
              </div>
